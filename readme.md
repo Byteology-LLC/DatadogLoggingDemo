@@ -312,7 +312,7 @@ Inspecting the "Emergency" status log (which translates to our Critical log in .
 - The method name where the log was created (called "ActionName") and which project it was in
 - The request path for the API
 - The class that was being called when the log was created (called SourceContext)
-- The custom data (in this case, the Timestamp and User values we passed into the code) are serialized as individual fields that can be used for searching or creating facets with later.
+- The custom data (in this case, the **Timestamp** and **User** values we passed into the code) are serialized as individual fields that can be used for searching or creating facets with later.
 
 As a developer, you now have enough information to find the exact method where the log was created and you will have any additional details that you pass into the log right in front of you.
 
