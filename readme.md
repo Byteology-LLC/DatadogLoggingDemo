@@ -316,13 +316,13 @@ Inspecting the "Emergency" status log (which translates to our Critical log in .
 
 As a developer, you now have enough information to find the exact method where the log was created and you will have any additional details that you pass into the log right in front of you.
 
-![screenshot of the detail view of a critical log in datadog](images/atadog_critical_log.png)
+![screenshot of the detail view of a critical log in datadog](images/datadog_critical_log.png)
 
 ## Inspecting the Exception
 
 Close the detail view for the critical log and find the exception log in the list and click on that. Right away you are going to notice the same information you had in the critical log, but also the stack trace is going to be available to you in the "Exception" field. Again, as a developer this information is incredibly useful for diagnosing issues that occur in your production environment.
 
-![screenshot of the detail view of the exception entry in datadog](images\datadog_exception.png)
+![screenshot of the detail view of the exception entry in datadog](images/datadog_exception.png)
 
 You will also notice that logs created by authenticated users have the UserId field attached, which makes it even easier to trace context.
 
@@ -330,7 +330,7 @@ You will also notice that logs created by authenticated users have the UserId fi
 
 Sometimes, having the error isn't enough and you need to better understand how a user got to where they were at to throw the exception. In the "detail view" window there is a "View in Context" button in the upper-right corner that will bring you to your default log view and highlight the specific log that you were looking at, which will give you some details about the debug and info logs that were created around the same time.
 
-![screenshot of the log context highlighting in datadog](images\datadog_log_context.png)
+![screenshot of the log context highlighting in datadog](images/datadog_log_context.png)
 
 In my screenshot, you can see the info log referring to the execution of my `DatadogLoggingDemo.LoggingsTestAppService.SimulateExceptionAsync` endpoint, so you know a user triggered that first, then the route matched to a remote endpoint, then the exception was triggered. It is pretty easy now to follow the logs through the events that took place before the exception was triggered.
 
