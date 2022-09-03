@@ -324,7 +324,7 @@ Close the detail view for the critical log and find the exception log in the lis
 
 ![screenshot of the detail view of the exception entry in datadog](images/datadog_exception.png)
 
-You will also notice that logs created by authenticated users have the UserId field attached, which makes it even easier to trace context.
+You will also notice that logs created by authenticated users have the **UserId** field attached, which makes it even easier to trace context.
 
 ## Log context
 
