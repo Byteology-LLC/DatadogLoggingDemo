@@ -99,7 +99,7 @@ Run the DBMigrator and then run the application as it currently stands. You won'
 
 Log into Datadog and navigate to "Logs -> Search". You should see your logs flowing in, and if you expand the "Source" in the facets column you should see our *datadogloggingdemo* listed there.
 
-![screenshot of the datadog platform with logs and the source](images\datadog_logs_initial.png)
+![screenshot of the datadog platform with logs and the source](images/datadog_logs_initial.png)
 
 # Diving deeper
 
@@ -279,15 +279,15 @@ If any of that javascript confuses you, I would recommend you read up on the way
 
 At this point you should be able to run the app and see your buttons:
 
-![screenshot of the app with the buttons](images\buttons.png)
+![screenshot of the app with the buttons](images/buttons.png)
 
 Pressing the log buttons should produce a nice little notification about it being successful:
 
-![screenshot of the notifications](images\notifications.png)
+![screenshot of the notifications](images/notifications.png)
 
 and pressing the Exception button should produce the notification as well as an exception alert:
 
-![screenshot of the exception and notification](images\exception.png)
+![screenshot of the exception and notification](images/exception.png)
 
 This is how you know it is all working as expected. Be sure to trigger at least one critical log and one exception (both before and after you log in) and then move over to datadog to digest the logs.
 
@@ -295,13 +295,13 @@ This is how you know it is all working as expected. Be sure to trigger at least 
 
 Heading back over to the Datadog log search window, we can expand the "Status" facet and uncheck the boxes next to the *info* and *debug* options to filter out some of the noise and see that we are left with just the Warning, Error, Critical and exception related logs.
 
-![screenshot of the datadog log list with info and debug filtered out](images\datadog_filtered.png)
+![screenshot of the datadog log list with info and debug filtered out](images/datadog_filtered.png)
 
 Now, if we wanted to create a saved view in datadog that just shows us these specific criteria, you click the "+ Save" button in the upper left corner of the window and you will have a view that you can switch to to quickly filter out the clutter in your logs:
 
-![screenshot of the save view button in datadog](images\datadog_save_view_button.png)
+![screenshot of the save view button in datadog](images/datadog_save_view_button.png)
 
-![screenshot of the saved view](images\datadog_save_view.png)
+![screenshot of the saved view](images/datadog_save_view.png)
 
 So, just like that, you've now got a filtered diagnostic window showing just the things that are important to you. Now let's take a look at an actual log and what it shows.
 
@@ -316,7 +316,7 @@ Inspecting the "Emergency" status log (which translates to our Critical log in .
 
 As a developer, you now have enough information to find the exact method where the log was created and you will have any additional details that you pass into the log right in front of you.
 
-![screenshot of the detail view of a critical log in datadog](images\datadog_critical_log.png)
+![screenshot of the detail view of a critical log in datadog](images/atadog_critical_log.png)
 
 ## Inspecting the Exception
 
